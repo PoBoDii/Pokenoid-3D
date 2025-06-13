@@ -1,0 +1,1 @@
+Caps are either a shader, or vertex colored in-game.

@@ -1,0 +1,212 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<COLLADA version="1.4.1" xmlns="http://www.collada.org/2005/11/COLLADASchema">
+  <asset>
+    <created>2016-05-13T03:16:40Z</created>
+    <modified>2016-05-13T03:16:40Z</modified>
+  </asset>
+  <library_images>
+    <image id="it08_DRINK_id" name="it08_DRINK">
+      <init_from>it08_DRINK.png</init_from>
+    </image>
+    <image id="it09_01_PPMAX_id" name="it09_01_PPMAX">
+      <init_from>it09_01_PPMAX.png</init_from>
+    </image>
+  </library_images>
+  <library_materials>
+    <material id="it08_drink_mat_mat_id" name="it08_drink_mat_mat">
+      <instance_effect url="#eff_it08_drink_mat_id" />
+    </material>
+    <material id="it08_mat_mat_id" name="it08_mat_mat">
+      <instance_effect url="#eff_it08_mat_id" />
+    </material>
+  </library_materials>
+  <library_effects>
+    <effect id="eff_it08_drink_mat_id" name="eff_it08_drink_mat">
+      <profile_COMMON>
+        <newparam sid="img_surface">
+          <surface type="2D">
+            <init_from>it08_DRINK_id</init_from>
+            <format>PNG</format>
+          </surface>
+        </newparam>
+        <newparam sid="img_sampler">
+          <sampler2D>
+            <source>img_surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NEAREST_MIPMAP_NEAREST</minfilter>
+            <magfilter>LINEAR</magfilter>
+            <mipfilter>LINEAR</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="img_technique">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="img_sampler" texcoord="uv" />
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+    <effect id="eff_it08_mat_id" name="eff_it08_mat">
+      <profile_COMMON>
+        <newparam sid="img_surface">
+          <surface type="2D">
+            <init_from>it09_01_PPMAX_id</init_from>
+            <format>PNG</format>
+          </surface>
+        </newparam>
+        <newparam sid="img_sampler">
+          <sampler2D>
+            <source>img_surface</source>
+            <wrap_s>WRAP</wrap_s>
+            <wrap_t>WRAP</wrap_t>
+            <minfilter>NEAREST_MIPMAP_NEAREST</minfilter>
+            <magfilter>LINEAR</magfilter>
+            <mipfilter>LINEAR</mipfilter>
+          </sampler2D>
+        </newparam>
+        <technique sid="img_technique">
+          <phong>
+            <emission>
+              <color>0 0 0 1</color>
+            </emission>
+            <ambient>
+              <color>0 0 0 1</color>
+            </ambient>
+            <diffuse>
+              <texture texture="img_sampler" texcoord="uv" />
+            </diffuse>
+            <specular>
+              <color>1 1 1 1</color>
+            </specular>
+          </phong>
+        </technique>
+      </profile_COMMON>
+    </effect>
+  </library_effects>
+  <library_geometries>
+    <geometry id="mesh_0_bromhexine_id" name="mesh_0_bromhexine">
+      <mesh>
+        <source id="mesh_0_bromhexine_position_id" name="mesh_0_bromhexine_position">
+          <float_array id="mesh_0_bromhexine_position_array_id" count="24">-0.0400237 0.11789 0.128763 -0.0993952 0.253896 0.0819458 -0.0993952 0.11789 0.0819458 -0.0400237 0.253896 0.128763 0.0400237 0.11789 0.128763 0.0400237 0.253896 0.128763 0.0994 0.11789 0.0905812 0.0994 0.253897 0.0905809</float_array>
+          <technique_common>
+            <accessor source="#mesh_0_bromhexine_position_array_id" count="8" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh_0_bromhexine_uv0_id" name="mesh_0_bromhexine_uv0">
+          <float_array id="mesh_0_bromhexine_uv0_array_id" count="16">0.383004 -0.986788 0.209462 -0.517634 0.209462 -0.986788 0.383004 -0.517634 0.616982 -0.986788 0.616982 -0.517634 0.790538 -0.986788 0.790538 -0.517629</float_array>
+          <technique_common>
+            <accessor source="#mesh_0_bromhexine_uv0_array_id" count="8" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh_0_bromhexine_color_id" name="mesh_0_bromhexine_color">
+          <float_array id="mesh_0_bromhexine_color_array_id" count="32">0.6588235 0.7490196 0.7647059 1 1 1 1 1 0.6588235 0.7490196 0.7647059 1 1 1 1 1 0.6588235 0.7490196 0.7647059 1 0.7960784 0.8588235 0.9294118 1 0.6588235 0.7490196 0.7647059 1 0.6588235 0.7490196 0.7647059 1</float_array>
+          <technique_common>
+            <accessor source="#mesh_0_bromhexine_color_array_id" count="8" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh_0_bromhexine_vertices_id">
+          <input semantic="POSITION" source="#mesh_0_bromhexine_position_id" />
+        </vertices>
+        <triangles material="it08_drink_mat" count="6">
+          <input semantic="VERTEX" source="#mesh_0_bromhexine_vertices_id" offset="0" />
+          <input semantic="COLOR" source="#mesh_0_bromhexine_color_id" offset="0" />
+          <input semantic="TEXCOORD" source="#mesh_0_bromhexine_uv0_id" offset="0" set="0" />
+          <p>0 1 2 0 3 1 0 4 3 4 5 3 4 6 5 6 7 5</p>
+        </triangles>
+      </mesh>
+    </geometry>
+    <geometry id="mesh_1_bromhexine_id" name="mesh_1_bromhexine">
+      <mesh>
+        <source id="mesh_1_bromhexine_position_id" name="mesh_1_bromhexine_position">
+          <float_array id="mesh_1_bromhexine_position_array_id" count="243">0 0.427634 0 0.0637097 0.422501 -0.0462878 0.0243349 0.422501 -0.0748953 0.0787497 0.422501 0 -0.0243349 0.422501 -0.0748953 0.0637097 0.422501 0.046288 -0.0637098 0.422501 -0.0462878 0.0243349 0.422501 0.0748953 -0.0787496 0.422501 0 -0.0243349 0.422501 0.0748953 -0.0637098 0.422501 0.046288 0.101184 0.0197739 -0.0735143 0.0913036 0.00349336 -0.066336 0.0348749 0.00349336 -0.107334 0.12507 0.0197739 0 0.0386488 0.0197739 -0.118949 0.12507 0.304064 0 0.101184 0.304064 -0.0735143 0.112857 0.00349336 0 -0.0348749 0.00349336 -0.107334 0.0787496 0.359077 0 0.0386488 0.304064 -0.118949 0.0637097 0.359077 -0.0462878 0.101184 0.0197739 0.0735143 0.101184 0.304064 0.0735143 -0.0386488 0.0197739 -0.118949 0.0637097 0.359077 0.0462879 0.0243349 0.359077 -0.0748953 0.0913036 0.00349336 0.066336 -0.0386488 0.304064 -0.118949 0.0243349 0.359077 0.0748952 0.0386488 0.0197739 0.118949 0.0386488 0.304064 0.118949 -0.024335 0.359077 -0.0748953 0.0348749 0.00349336 0.107334 -0.024335 0.359077 0.0748952 -0.0386488 0.0197739 0.118949 -0.0386488 0.304064 0.118949 -0.0348749 0.00349336 0.107334 -0.0637098 0.359077 0.0462879 -0.101184 0.0197739 0.0735143 -0.101184 0.304064 0.0735143 -0.0913036 0.00349336 0.066336 -0.0787496 0.359077 0 -0.12507 0.0197739 0 -0.12507 0.304064 0 -0.112857 0.00349336 0 -0.0637098 0.359077 -0.0462878 -0.101184 0.0197739 -0.0735143 -0.101184 0.304064 -0.0735143 -0.0913036 0.00349336 -0.066336 -0.024335 0.359077 -0.0748953 -0.0386488 0.0197739 -0.118949 -0.0386488 0.304064 -0.118949 -0.0348749 0.00349336 -0.107334 0.0637097 0.359077 -0.0462878 0.0243349 0.359077 -0.0748953 0.0637097 0.422501 -0.0462878 0.0787497 0.422501 0 0.0787496 0.359077 0 0.0243349 0.422501 -0.0748953 -0.024335 0.359077 -0.0748953 0.0637097 0.422501 0.046288 -0.0243349 0.422501 -0.0748953 0.0637097 0.359077 0.0462879 -0.0637098 0.359077 -0.0462878 -0.0243349 0.422501 -0.0748953 -0.024335 0.359077 -0.0748953 -0.0637098 0.422501 -0.0462878 -0.0787496 0.359077 0 -0.0787496 0.422501 0 -0.0637098 0.359077 0.0462879 -0.0637098 0.422501 0.046288 -0.024335 0.359077 0.0748952 -0.0637098 0.422501 0.046288 -0.0637098 0.359077 0.0462879 -0.0243349 0.422501 0.0748953 0.0243349 0.359077 0.0748952 0.0243349 0.422501 0.0748953 0.0637097 0.359077 0.0462879 0.0637097 0.422501 0.046288</float_array>
+          <technique_common>
+            <accessor source="#mesh_1_bromhexine_position_array_id" count="81" stride="3">
+              <param name="X" type="float" />
+              <param name="Y" type="float" />
+              <param name="Z" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh_1_bromhexine_uv0_id" name="mesh_1_bromhexine_uv0">
+          <float_array id="mesh_1_bromhexine_uv0_array_id" count="162">0.811117 0.814778 0.94465 0.916787 0.862122 0.979833 0.976173 0.814778 0.760112 0.979833 0.94465 0.712768 0.677585 0.916787 0.862122 0.649722 0.646062 0.814778 0.760112 0.649722 0.677585 0.712768 0.804608 0.029463 0.804608 0.00529777 0.904608 0.00529777 0.704608 0.029463 0.904608 0.029463 0.704608 0.42696 0.804608 0.42696 0.704608 0.00529777 1 0.00529777 0.704608 0.619308 0.904608 0.42696 0.804608 0.619308 0.604608 0.029463 0.604608 0.42696 1 0.029463 0.604608 0.619308 0.904608 0.619308 0.604608 0.00529777 1 0.42696 0.504608 0.619308 0.504608 0.029463 0.504608 0.42696 1 0.619308 0.504608 0.00529777 0.404608 0.619308 0.404608 0.029463 0.404608 0.42696 0.404608 0.00529777 0.304608 0.619308 0.304608 0.029463 0.304608 0.42696 0.304608 0.00529777 0.204608 0.619308 0.204608 0.029463 0.204608 0.42696 0.204608 0.00529777 0.104608 0.619308 0.104608 0.029463 0.104608 0.42696 0.104608 0.00529777 0 0.619308 0 0.029463 0 0.42696 0 0.00529777 0.414693 0.812265 0.414693 0.719113 0.624065 0.812265 0.624065 0.903953 0.414693 0.903953 0.624065 0.719113 0.414693 0.656323 0.624065 0.970142 0.624065 0.656323 0.414693 0.970142 0.414693 0.867691 0.624065 0.970688 0.414693 0.970688 0.624065 0.867691 0.414693 0.754051 0.624065 0.754051 0.414693 0.655571 0.624065 0.655571 0.414693 0.867691 0.624065 0.970688 0.414693 0.970688 0.624065 0.867691 0.414693 0.754051 0.624065 0.754051 0.414693 0.655571 0.624065 0.655571</float_array>
+          <technique_common>
+            <accessor source="#mesh_1_bromhexine_uv0_array_id" count="81" stride="2">
+              <param name="S" type="float" />
+              <param name="T" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <source id="mesh_1_bromhexine_color_id" name="mesh_1_bromhexine_color">
+          <float_array id="mesh_1_bromhexine_color_array_id" count="324">1 0.9686275 0.4156863 1 1 0.9686275 0.4156863 1 1 0.9686275 0.4156863 1 1 0.9686275 0.4156863 1 1 0.9686275 0.4156863 1 1 0.9686275 0.4156863 1 1 0.9686275 0.4156863 1 1 0.9686275 0.4156863 1 1 0.9686275 0.4156863 1 1 0.9686275 0.4156863 1 1 0.9686275 0.4156863 1 0.9607843 0.7607843 0.7137255 1 0.9607843 0.7607843 0.7137255 1 0.9607843 0.7607843 0.7137255 1 0.9607843 0.7607843 0.7137255 1 0.6588235 0.7490196 0.7647059 1 1 1 1 1 1 1 1 1 0.9607843 0.7607843 0.7137255 1 0.9607843 0.7607843 0.7137255 1 1 1 1 1 1 1 1 1 1 1 1 1 0.9607843 0.7607843 0.7137255 1 1 1 1 1 0.6588235 0.7490196 0.7647059 1 1 1 1 1 1 1 1 1 0.9607843 0.7607843 0.7137255 1 1 1 1 1 1 1 1 1 0.9607843 0.7607843 0.7137255 1 1 1 1 1 1 1 1 1 0.9607843 0.7607843 0.7137255 1 1 1 1 1 0.9607843 0.7607843 0.7137255 1 1 1 1 1 0.9607843 0.7607843 0.7137255 1 1 1 1 1 0.9607843 0.7607843 0.7137255 1 1 1 1 1 0.9607843 0.7607843 0.7137255 1 1 1 1 1 0.9607843 0.7607843 0.7137255 1 1 1 1 1 0.9607843 0.7607843 0.7137255 1 1 1 1 1 0.6588235 0.7490196 0.7647059 1 1 1 1 1 0.9607843 0.7607843 0.7137255 1 1 1 1 1 0.6588235 0.7490196 0.7647059 1 1 1 1 1 0.9607843 0.7607843 0.7137255 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1 0.9607843 0.9294118 0.4352941 1</float_array>
+          <technique_common>
+            <accessor source="#mesh_1_bromhexine_color_array_id" count="81" stride="4">
+              <param name="R" type="float" />
+              <param name="G" type="float" />
+              <param name="B" type="float" />
+              <param name="A" type="float" />
+            </accessor>
+          </technique_common>
+        </source>
+        <vertices id="mesh_1_bromhexine_vertices_id">
+          <input semantic="POSITION" source="#mesh_1_bromhexine_position_id" />
+        </vertices>
+        <triangles material="it08_mat" count="90">
+          <input semantic="VERTEX" source="#mesh_1_bromhexine_vertices_id" offset="0" />
+          <input semantic="COLOR" source="#mesh_1_bromhexine_color_id" offset="0" />
+          <input semantic="TEXCOORD" source="#mesh_1_bromhexine_uv0_id" offset="0" set="0" />
+          <p>0 1 2 0 3 1 0 2 4 0 5 3 0 4 6 0 7 5 0 6 8 0 9 7 0 8 10 0 10 9 11 12 13 11 14 12 11 13 15 11 16 14 11 15 17 11 17 16 12 14 18 13 19 15 17 20 16 17 15 21 17 22 20 17 21 22 14 23 18 14 16 24 14 24 23 19 25 15 15 25 21 20 26 16 16 26 24 22 21 27 18 23 28 25 29 21 21 29 27 26 30 24 23 31 28 23 24 32 23 32 31 24 30 32 29 33 27 28 31 34 30 35 32 31 36 34 31 32 37 31 37 36 32 35 37 34 36 38 35 39 37 36 40 38 36 37 41 36 41 40 37 39 41 38 40 42 39 43 41 40 44 42 40 41 45 40 45 44 41 43 45 42 44 46 43 47 45 44 48 46 44 45 49 44 49 48 45 47 49 46 48 50 47 51 49 48 52 50 48 49 53 48 53 52 53 49 51 50 52 54 55 56 57 55 57 58 55 58 59 56 60 57 56 61 60 58 62 59 61 63 60 62 64 59 65 66 67 65 68 66 65 69 68 69 70 68 69 71 70 71 72 70 73 74 75 73 76 74 73 77 76 77 78 76 77 79 78 79 80 78</p>
+        </triangles>
+      </mesh>
+    </geometry>
+  </library_geometries>
+  <library_visual_scenes>
+    <visual_scene id="vs_item_it08_03_BROMHEXINE_id" name="vs_item_it08_03_BROMHEXINE">
+      <node id="vsn_mesh_0_bromhexine_id" name="vsn_mesh_0_bromhexine" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#mesh_0_bromhexine_id">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="it08_drink_mat" target="#it08_drink_mat_mat_id" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+      <node id="vsn_mesh_1_bromhexine_id" name="vsn_mesh_1_bromhexine" type="NODE">
+        <matrix>1 0 0 0 0 1 0 0 0 0 1 0 0 0 0 1</matrix>
+        <instance_geometry url="#mesh_1_bromhexine_id">
+          <bind_material>
+            <technique_common>
+              <instance_material symbol="it08_mat" target="#it08_mat_mat_id" />
+            </technique_common>
+          </bind_material>
+        </instance_geometry>
+      </node>
+    </visual_scene>
+  </library_visual_scenes>
+  <scene>
+    <instance_visual_scene url="#vs_item_it08_03_BROMHEXINE_id" />
+  </scene>
+</COLLADA>
